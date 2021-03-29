@@ -15,8 +15,7 @@ export function sum(a, b) {
     const sumArr = [];
     const added = a + b;
     const sumString = `The sum of ${a} and ${b} is ${added}.`;
-    sumArr.push(added);
-    sumArr.push(sumString);
+    sumArr.push(added, sumString);
     return sumArr;
 }
 
@@ -31,7 +30,11 @@ Write a function called multiply() that takes in two numbers as arguments and re
 */
 
 export function multiply(a, b) {
-
+    const multArr = [];
+    const multiplied = a * b;
+    const multString = `The product of ${a} and ${b} is ${multiplied}.`;
+    multArr.push(multiplied, multString);
+    return multArr;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
