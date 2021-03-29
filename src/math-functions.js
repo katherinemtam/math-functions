@@ -12,7 +12,12 @@ example and uses the values that were input into the function:
 */
 
 export function sum(a, b) {
-
+    const sumArr = [];
+    const added = a + b;
+    const sumString = `The sum of ${a} and ${b} is ${added}.`;
+    sumArr.push(added);
+    sumArr.push(sumString);
+    return sumArr;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
